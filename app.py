@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
+import tensorflow as tf 
 from tensorflow import keras
 
 
@@ -28,7 +29,7 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
     #preprocessing the image for the model to predict
-    img = image.resize((256, 256))
+    img = image.resize((128, 128))
     img = np.array(img)
 
     #add an extra dimension to simulate a batch of size 1
