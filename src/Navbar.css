@@ -1,0 +1,56 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 97vw;
+  z-index: 100;
+  color: white;
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-left-name {
+  font-size: 2rem;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.nav-left-name:hover {
+  letter-spacing: 1px;
+  color: var(--main-color);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right-lis {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-right-link {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.nav-right-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  cursor: pointer;
+  color: aliceblue;
+  font-size: 1rem;
+}

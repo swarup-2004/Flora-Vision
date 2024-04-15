@@ -1,0 +1,22 @@
+.titlex {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.mainx {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainx-bodx {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

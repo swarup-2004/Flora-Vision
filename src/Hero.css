@@ -1,0 +1,88 @@
+.he-r {
+  width: 40vw;
+  height: calc(100vh-2rem);
+  margin: 2rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+    0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      18% 28% at 24% 50%,
+      #d0ceff94 7%,
+      #073aff00 100%
+    ),
+    radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%),
+    radial-gradient(70% 53% at 36% 76%, #73fff0ff 0%, #073aff00 100%),
+    radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 34% 72%, #b2fb8600 7%, #073aff00 100%),
+    radial-gradient(18% 28% at 35% 87%, #00ff5eff 7%, #073aff00 100%),
+    radial-gradient(31% 43% at 7% 98%, #00ff19ff 24%, #073aff00 100%),
+    radial-gradient(21% 37% at 72% 23%, #d3ff6d9c 24%, #073aff00 100%),
+    radial-gradient(35% 56% at 91% 74%, #cccdfff5 9%, #073aff00 100%),
+    radial-gradient(74% 86% at 67% 38%, #6dffaef5 24%, #073aff00 100%),
+    linear-gradient(94deg, #b2fb86ff 1%, #00ff5eff 100%);
+}
+
+.he-welcome {
+  font-family: "Mona-Sans", sans-serif;
+  letter-spacing: 0.5vh;
+}
+
+.he-head {
+  font-size: 5.5rem;
+  font-family: "PPRader", sans-serif;
+  line-height: calc(6rem * 1.25);
+  letter-spacing: -1.5px;
+  width: 80%;
+}
+
+.he-p {
+  margin: 1rem 0;
+  color: #b7b7b7;
+  width: 60%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.he-btn {
+  background: #a8ff78; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  margin: 1rem 2rem 0 0;
+  color: rgb(91, 91, 91);
+  transition: all 3s;
+}
+
+.hero-line-3 {
+  background: #a8ff78; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #78ffd6,
+    #a8ff78
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #78ffd6,
+    #a8ff78
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 0.5rem;
+  height: 10vh;
+}
+
+.he-bot {
+  font-size: 2.5rem;
+  font-family: "PPRader", sans-serif;
+}

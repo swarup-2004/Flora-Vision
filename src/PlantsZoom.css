@@ -1,0 +1,67 @@
+.PO-container {
+  height: 300vh;
+  position: relative;
+}
+
+.PO-container .PO-sticky {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  height: 100vh;
+}
+
+.PO-container .PO-sticky .PO-el {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PO-container .PO-sticky .PO-el .PO-imageContainer {
+  position: relative;
+  width: 25vw;
+  height: 25vh;
+}
+
+.PO-container .PO-sticky .PO-el .PO-imageContainer img {
+  object-fit: cover;
+  height: 25vh;
+  width: 25vw;
+}
+
+.PO-container .PO-sticky .PO-el:nth-of-type(2) .PO-imageContainer {
+  top: -30vh;
+  left: 12.5vw;
+  width: 28vw;
+  height: 28vh;
+}
+
+.PO-container .PO-sticky .PO-el:nth-of-type(3) .PO-imageContainer {
+  top: -10vh;
+  left: -31vw;
+  width: 278w;
+  height: 279h;
+}
+
+.PO-container .PO-sticky .PO-el:nth-of-type(4) .PO-imageContainer {
+  left: 30vw;
+  top: 3vh;
+  width: 28vw;
+  height: 29vh;
+}
+
+.PO-container .PO-sticky .PO-el:nth-of-type(5) .PO-imageContainer {
+  top: 32vh;
+  left: 15vw;
+  width: 28vw;
+  height: 28vh;
+}
+
+.PO-container .PO-sticky .PO-el:nth-of-type(6) .PO-imageContainer {
+  top: 29.5vh;
+  left: -22.5vw;
+  width: 28vw;
+  height: 28vh;
+}

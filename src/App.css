@@ -1,0 +1,28 @@
+/* .pik {
+  font-size: 3rem;
+  font-weight: 700;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden;
+  background-color: rgb(0, 203, 3);
+}
+
+.tik {
+  opacity: 0.1;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* @keyframes tik {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  80% {
+    opacity: 0.15;
+    transform: translateY(1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */

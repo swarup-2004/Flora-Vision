@@ -1,0 +1,41 @@
+.project {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px 20px 50px;
+  border-top: 1px solid rgb(201, 201, 201);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.project:last-of-type {
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.project:hover {
+  background-color: rgb(32, 100, 0);
+}
+
+.project:hover h2 {
+  transform: translateX(-10px);
+  transition: transform 0.4s ease-in, color 0.2s ease-in-out 0.2s;
+  color: white;
+}
+
+.project:hover p {
+  transform: translateX(10px);
+  color: white;
+  transition: all 0.4s ease-in, color 0.2s ease-in-out 0.2s;
+}
+
+.project h2 {
+  font-size: 60px;
+  margin: 0px;
+  font-weight: 400;
+  transition: all 0.4s ease-in;
+}
+
+.project p {
+  font-weight: 300;
+  transition: all 0.4s ease-in;
+}

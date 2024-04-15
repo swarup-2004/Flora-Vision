@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Realgar";
+  src: url("./assets/Realgar-Font-Family/EMT_Realgar_TRIAL/Realgar_TRIAL-Bd.otf");
+}
+:root {
+  --main-color: #40d25b;
+}
+
+@import url("https://fonts.cdnfonts.com/css/realgar-trial");
+@import url("https://fonts.cdnfonts.com/css/mona-sans");
+@font-face {
+  font-family: "PPRader";
+  src: url("../public/PPRader-Free\ for\ personal\ use\ v1.0/PPRader-Regular.otf")
+    format("opentype");
+}
