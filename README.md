@@ -47,13 +47,26 @@ This project focuses on utilizing machine learning techniques to identify variou
     ```
     
 ## Usage
+1. Start server:
+
+    ```bash
+    $ cd api
+    $ python app.py
+    ```
+    
+2. Run Application:
+
+   ```bash
+    $ npm run dev
+    ```
+
+
+3. Upload image of Plant and get result
+4. Ask Questions to chatbot
 
 ## Contributors
 
-- [List contributors here]
-
-## License
-
-[Specify your license here, e.g., MIT License]
-
-```
+- Atharva Zanjad
+- Swarup Pokhakar
+- Tanmay Shingavi
+- Vaishnavi Thakur
