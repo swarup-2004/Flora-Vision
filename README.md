@@ -1,7 +1,4 @@
-Sure, here's a README file for your project:
-
-```
-# Medicinal Plant Identification and Information System
+# Flora Vision
 
 ## Technologies Used
 
