@@ -36,8 +36,8 @@ This project focuses on utilizing machine learning techniques to identify variou
 1. Clone the repository:
 
     ```bash
-    $ git clone 
-    $ cd your-repo
+    $ git clone https://github.com/swarup-2004/Flora-Vision.git
+    $ cd Flora-Vision
    ```
     
 3. Install dependencies:
