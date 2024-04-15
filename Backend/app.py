@@ -11,7 +11,7 @@ CORS(app)
 # Function to predict class of the image
 def predict_class(probab):
     num = np.argmax(probab)
-    classes = ['Arjun', 'Bramhi', 'Curry', 'Mint', 'Neem', 'Rubble']
+    classes = ['Arjuna', 'Bramhi', 'Curry', 'Mint', 'Neem', 'Rubble']
     return classes[num], num
 
 @app.route('/api/submit_data', methods=['POST'])
@@ -20,7 +20,8 @@ def submit_data():
         return jsonify({'message': 'No file part in the request'}), 400
 
     image = request.files['image']
-    img = image.resize((128, 128))
+    img = Image.open(image)  # Open the image file
+    img = img.resize((256, 256))  # Resize the image
     img = np.array(img) / 255.0
 
     # Add an extra dimension to simulate a batch of size 1
@@ -34,7 +35,7 @@ def submit_data():
     
     category, score = predict_class(predictions)
 
-    return jsonify({'plantName': category, "score" : score})
+    return jsonify({'plantName': category})
 
 if __name__ == '__main__':
     app.run(debug=True)
