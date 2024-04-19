@@ -28,7 +28,7 @@ def submit_data():
     img = np.expand_dims(img, axis=0)
 
     # Load the neural model
-    model = keras.models.load_model("CNN_Model.h5")
+    model = keras.models.load_model("model.h5")
 
     # Predicting the class of the model
     predictions = model.predict(img)
