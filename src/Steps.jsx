@@ -9,19 +9,19 @@ import "./Steps.css";
 
 const data = [
   {
-    content: "Step 1",
+    content: "📷 Take Picture of the Plant",
     id: 1,
   },
   {
-    content: "Step 2",
+    content: "Upload the Picture to the Website",
     id: 2,
   },
   {
-    content: "Step 3",
+    content: "Wait for the Plant to be Identified",
     id: 3,
   },
   {
-    content: "Step 4",
+    content: "🚀 Get the Plant Information ",
     id: 4,
   },
 ];
@@ -55,7 +55,7 @@ function Steps() {
                 imgx === 1 ? Img1 : imgx === 2 ? Img2 : imgx === 3 ? Img3 : Img4
               }
               alt="img"
-              className=" h-96 object-contain"
+              className="h-96 object-contain transition-all duration-500 ease-in-out"
             />
           </div>
         </div>
@@ -66,14 +66,14 @@ function Steps() {
 
 function FeatureTitle(props) {
   const ref = useRef(null);
-  const isInview = useInView(ref, { margin: "-40% 0px -40% 0px" });
+  const isInview = useInView(ref, { margin: "-30% 0px -30% 0px" });
   useEffect(() => {
     if (isInview) {
       props.setImgx(props.id);
     }
   }, [isInview]);
   return (
-    <span
+    <div
       ref={ref}
       className={
         isInview
@@ -81,8 +81,9 @@ function FeatureTitle(props) {
           : " text-5xl text-gray-200 font-mono transition-colors "
       }
     >
-      {props.title}
-    </span>
+      <div className=" text-3xl mb-3">Step {props.id}</div>
+      <div>{props.title}</div>
+    </div>
   );
 }
 

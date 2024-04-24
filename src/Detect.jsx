@@ -5,12 +5,15 @@ import Plant from "/img3.jpg";
 import PData from "./PlantData.js";
 import "./Detect.css";
 import Modalx from "./Modalx";
+import Imgx from "./Components/ImageAnimOnScroll/Imgx.jsx";
+import Identify from "/Identify.svg";
 
 function Detect() {
   const [image, setImage] = useState("Hello World");
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState({});
   const [plantName, setPlantName] = useState("");
+  const ref = useRef(null);
 
   useEffect(() => {
     console.log(PData);
@@ -34,40 +37,44 @@ function Detect() {
 
   return (
     <div className="detect">
-      <div className="detect-form flex flex-col items-center justify-center  p-6 ">
-        <form
-          onSubmit={sendImg}
-          className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-        >
-          <input
-            type="file"
-            name="image"
-            className="detect-form-input-field appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          />
-          <button
-            type="submit"
-            className="detect-form-input-submit mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Submit
-          </button>
-        </form>
+      <div className=" font-sans  font-bold tracking-wide text-4xl  pt-10 px-10">
+        Upload
+      </div>
+      <div class="flex">
+        <div class="w-1/2 flex col items-center w-1/2 justify-center ">
+          <form onSubmit={sendImg} class="m-4">
+            <div>
+              <input type="file" name="image" class="m-2" />
+            </div>
+            <button
+              type="submit"
+              class="m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="flex w-1/2 h-full justify-center">
+          <img src={Identify} alt="Plant" class="m-4 h-1/2 w-4/6" />
+        </div>
       </div>
 
-      <Modalx isOpen={loading} onClose={() => setLoading(false)}>
+      <Modalx isOpen={loading} onClose={() => setLoading(false)} ref={ref}>
         <div className=" pt-6 flex justify-between">
           <div className="detect-modal-img w-7/12">
-            <img
+            {/* <img
               src={results.image}
               alt="Plant"
               className="detect-modal-image"
-            />
+            /> */}
+            <Imgx imga={results.image} rafa={ref} scal={0} />
             <div className="my-8  font-bold text-lg">
-              Accuracy: <span className=" text-green-700">85%</span>
+              Accuracy: <span className=" text-green-700 ">85%</span>
             </div>
           </div>
-          <div className="detect-modal-info  w-5/12">
-            <div className="bg-white  px-8  pb-8 mb-4 flex flex-col ">
-              <div className="text-4xl pb-2 font-bold mb-4 border-b-2 border-gray-200 text-green-900">
+          <div className="detect-modal-info bg-[f5f5f5]  w-5/12">
+            <div className="  px-8  pb-8 mb-4 flex flex-col ">
+              <div className="text-4xl pb-2 font-bold mb-4 border-b-2 border-gray-200 text-green-900 tracking-wide font-sans">
                 {plantName}
               </div>
               <div className="font-bold text-xl mb-2">

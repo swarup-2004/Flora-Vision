@@ -45,7 +45,7 @@ function Hero() {
               />
               <div className="flex flex-col h-full justify-between">
                 <div className="he-bot">
-                  <CountUp end={100} duration={10} />%
+                  <CountUp end={97} duration={10} />%
                 </div>
                 <span>Accuracy</span>
               </div>
@@ -70,7 +70,7 @@ function Hero() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
               />
               <div className="flex flex-col h-full justify-between">
-                <div className="he-bot">2ms</div>
+                <div className="he-bot">1s</div>
                 <span>Avg Response Time</span>
               </div>
             </div>

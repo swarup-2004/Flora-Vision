@@ -2,12 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px 20px 0px;
+  margin: 2rem 5rem;
   position: fixed;
   top: 0;
-  width: 97vw;
+  width: calc(100vw - 10rem);
   z-index: 100;
-  color: white;
+  color: black;
+  transition: top 0.3s;
 }
 
 .nav__left {
@@ -21,7 +23,7 @@
   font-size: 2rem;
   font-family: sans-serif;
   transition: all 0.3s ease;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .nav-left-name:hover {
@@ -43,6 +45,7 @@
 .nav-right-link {
   margin-right: 20px;
   text-decoration: none;
+  color: #686af0f5;
 }
 
 .nav-right-button {
@@ -53,4 +56,9 @@
   cursor: pointer;
   color: aliceblue;
   font-size: 1rem;
+}
+
+.nav-up {
+  top: -100px;
+  transition: top 0.3s;
 }

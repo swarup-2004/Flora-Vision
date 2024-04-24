@@ -6,29 +6,30 @@ const Modalx = ({ isOpen, onClose, children }) => {
   return (
     <div
       onClick={onClose}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        background: "rgba(0, 0, 0, 0.5)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
+      // style={{
+      //   position: "fixed",
+      //   top: 0,
+      //   left: 0,
+      //   width: "100%",
+      //   height: "100%",
+      //   background: "rgba(0, 0, 0, 0.5)",
+      //   display: "flex",
+      //   alignItems: "center",
+      //   justifyContent: "center",
+      // }}
+      className=" m-8 "
     >
       <div
-        style={{
-          background: "white",
-          height: "80vh",
-          width: "80vw",
-          margin: "auto",
-          padding: "2%",
-          border: "2px solid #000",
-          borderRadius: "10px",
-          boxShadow: "2px solid black",
-        }}
+      // style={{
+      //   background: "white",
+      //   height: "80vh",
+      //   width: "80vw",
+      //   margin: "auto",
+      //   padding: "2%",
+      //   border: "2px solid #000",
+      //   borderRadius: "10px",
+      //   boxShadow: "2px solid black",
+      // }}
       >
         {children}
       </div>

@@ -5,7 +5,7 @@
   align-items: center;
   padding: 20px 50px 20px 50px;
   border-top: 1px solid rgb(201, 201, 201);
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.2s;
 }
 .project:last-of-type {

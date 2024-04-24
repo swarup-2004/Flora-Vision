@@ -7,7 +7,7 @@ import ImageHoverAccordian from "./ImageHoverAccordian";
 import Navbar from "./Navbar.jsx";
 import PlantsZoom from "./PlantsZoom.jsx";
 import Steps from "./Steps.jsx";
-import TakePic from "./TakePic.jsx";
+// import TakePic from "./TakePic.jsx";
 
 export default function App() {
   const tip = "text-5xl font-bold";

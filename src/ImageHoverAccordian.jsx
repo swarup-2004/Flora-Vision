@@ -59,7 +59,7 @@ export default function ImageHoverAccordian() {
             );
           })}
         </div>
-        <Modal modal={modal} projects={Data} />
+        {/* <Modal modal={modal} projects={Data} /> */}
       </div>
     </>
   );
