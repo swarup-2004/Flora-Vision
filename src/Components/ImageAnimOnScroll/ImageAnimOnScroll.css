@@ -1,0 +1,26 @@
+.iaos {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: fantasy;
+}
+
+.iaos-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.iaos-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  background-color: #f5f5f5;
+}

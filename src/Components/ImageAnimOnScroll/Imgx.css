@@ -1,0 +1,35 @@
+.imgx-div {
+  height: 70vh;
+  /* set height of this div and others things will set automatically */
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.imgx-div2 {
+  height: 10%;
+  background-color: #f5f5f5;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.ixx {
+  top: 0;
+}
+
+.ix {
+  bottom: 0;
+}
+
+.imgx-div img {
+  height: 90%;
+  z-index: 0;
+  position: relative;
+}
