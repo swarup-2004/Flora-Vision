@@ -68,9 +68,6 @@ function Detect() {
               className="detect-modal-image"
             /> */}
             <Imgx imga={results.image} rafa={ref} scal={0} />
-            <div className="my-8  font-bold text-lg">
-              Accuracy: <span className=" text-green-700 ">85%</span>
-            </div>
           </div>
           <div className="detect-modal-info bg-[f5f5f5]  w-5/12">
             <div className="  px-8  pb-8 mb-4 flex flex-col ">
