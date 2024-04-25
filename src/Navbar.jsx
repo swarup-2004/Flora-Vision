@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { IoLogoDropbox } from "react-icons/io";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { useScroll, useTransform } from "framer-motion";
 
-function Navbar() {
+function Navbar({ chat, changechat }) {
   const [navBarStatus, setNavBarStatus] = useState("nav");
 
   useEffect(() => {
@@ -31,8 +33,22 @@ function Navbar() {
         </div>
         <div className="nav-right">
           <ul className="nav-right-lis">
-            <li className="nav-right-link linke">Stats</li>
-            <li className="nav-right-link linke">Footer</li>
+            <li className="nav-right-link linke">
+              <Link to="/chatbot" onClick={(e) => changechat(true)}>
+                Chatbot
+              </Link>
+            </li>
+            <motion.li
+              className="nav-right-link linke cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                let Element = document.querySelector(".mainx");
+                Element.scrollIntoView({ behavior: "smooth" });
+              }}
+              disabled={chat === true}
+            >
+              Supported Plants
+            </motion.li>
           </ul>
           <motion.button
             className="nav-right-button"
@@ -42,7 +58,9 @@ function Navbar() {
             }}
             whileTap={{ scale: 0.9, backgroundColor: "#4fff94" }}
           >
-            Identify Plant
+            <Link to="/" onClick={(e) => changechat(false)}>
+              Identify Plant
+            </Link>
           </motion.button>
         </div>
       </div>

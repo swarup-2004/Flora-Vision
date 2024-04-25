@@ -49,7 +49,7 @@ function Steps() {
           </ul>
         </div>
         <div className="sticky top-0 flex items-center justify-center h-screen w-full overflow-hidden">
-          <div className="w-full">
+          <div className="">
             <img
               src={
                 imgx === 1 ? Img1 : imgx === 2 ? Img2 : imgx === 3 ? Img3 : Img4

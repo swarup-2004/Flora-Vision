@@ -9,7 +9,7 @@
 
 .mainx {
   display: flex;
-  height: 80vh;
+  /* height: 80vh; */
   margin-top: 4rem;
   align-items: center;
   justify-content: center;

@@ -8,21 +8,22 @@ import {
   useScroll,
 } from "framer-motion";
 import CountUp from "react-countup";
+import { Link } from "react-router-dom";
 
-function Hero() {
-  const imgxcont = useRef < HTMLDivElement > null;
+function Hero({ chat, changechat }) {
+  const imgxcont = useRef(null);
   const { scrollYProgress } = useScroll({
     target: imgxcont,
     offset: ["start start", "end end"],
   });
-  const scale = useTransform(scrollYProgress, [0, 0.2, 1], [0.5, 0.9, 1]);
+  const scale = useTransform(scrollYProgress, [0.5, 0.9, 1], [0.5, 0.6, 0.6]);
   return (
     <>
-      <div className=" flex h-screen justify-center  ">
-        <div className="flex flex-col justify-between w-1/2">
+      <div className=" flex  h-screen justify-center  " ref={imgxcont}>
+        <div className="flex flex-col justify-between  w-full md:w-1/2">
           <div />
           <div />
-          <div className=" ml-10 ">
+          <div className=" ml-5 md:ml-10 ">
             <h6 className="he-welcome">Welcome to FloraVision</h6>
             <h1 className="he-head">Un🔓lock the plant's🪴identity</h1>
             <div className="he-p">
@@ -30,13 +31,21 @@ function Hero() {
               instant, accurate plant identification.
             </div>
             <div>
-              <button className="he-btn1 he-btn">Detect Plant</button>
+              <button className="he-btn1 he-btn">
+                <Link to="/" onClick={(e) => changechat(false)}>
+                  Detect Plant
+                </Link>
+              </button>
 
-              <button className="he-btn2 he-btn">How It Works</button>
+              <button className="he-btn2 he-btn">
+                <Link to="/chatbot" onClick={(e) => changechat(true)}>
+                  Chatbot
+                </Link>
+              </button>
             </div>
           </div>
-          <div className="flex w-full mb-10 ml-10">
-            <div className="flex mr-10 w-1/6">
+          <div className="flex w-full mb-5 md:mb-10 ml-5 md:ml-10 ">
+            <div className="flex mr-5 md:mr-10 w-1/3 md:w-1/6">
               <motion.div
                 className=" hero-line-3 mr-4"
                 initial={{ scaleY: 0 }}
@@ -76,11 +85,14 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="he-r">
+        <div className="he-r w-full md:w-1/2">
           <motion.img
             src={DetectPlant}
-            className="sticky mb-3rem"
-            style={{ top: 0, scale }}
+            className=" mb-3rem"
+            style={{ top: 0 }}
+            initial={{ scale: 0 }}
+            animate={{ scale: 0.6 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
           />
         </div>
       </div>

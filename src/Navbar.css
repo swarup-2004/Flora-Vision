@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 20px 0px;
-  margin: 2rem 5rem;
+  padding: 1.4vh 1.4vh 1.4vh 0px;
+  margin: 5vh 3.8vw;
   position: fixed;
   top: 0;
-  width: calc(100vw - 10rem);
+  width: calc(100vw - 7.6vw);
   z-index: 100;
   color: black;
   transition: top 0.3s;

@@ -31,9 +31,9 @@
 }
 
 .he-head {
-  font-size: 5.5rem;
+  font-size: 5vw;
   font-family: "PPRader", sans-serif;
-  line-height: calc(6rem * 1.25);
+  line-height: calc(5vw * 1.25);
   letter-spacing: -1.5px;
   width: 80%;
 }
@@ -61,8 +61,10 @@
   padding: 0.8rem 1.2rem;
   border-radius: 1rem;
   margin: 1rem 2rem 0 0;
-  color: rgb(91, 91, 91);
+  color: rgb(49, 49, 49);
   transition: all 3s;
+  font-family: "Mona-Sans", sans-serif;
+  font-weight: 500;
 }
 
 .hero-line-3 {

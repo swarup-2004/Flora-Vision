@@ -45,7 +45,9 @@ export default function ImageHoverAccordian() {
   const [modal, setModal] = useState({ active: false, index: 0 });
   return (
     <>
-      <h1 className="titlex">Plants We Support</h1>
+      <h1 className="titlex" id="hexdi">
+        Plants We Support
+      </h1>
       <div className="mainx">
         <div className="mainx-bodx">
           {Data.map((item, index) => {
