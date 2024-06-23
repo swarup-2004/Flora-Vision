@@ -70,3 +70,10 @@ This project focuses on utilizing machine learning techniques to identify variou
 - Swarup Pokhakar
 - Tanmay Shingavi
 - Vaishnavi Thakur
+
+## Screenshots
+
+<img src="Screenshot 2024-06-23 160146.png">
+<img src="Screenshot 2024-06-23 160246.png">
+<img src="Screenshot 2024-06-23 160314.png">
+<img src="Screenshot 2024-06-23 160349.png">
