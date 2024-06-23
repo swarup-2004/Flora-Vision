@@ -9,7 +9,7 @@
 - Flask
 
 ### FrontEnd:
-- [Specify your FrontEnd technologies here]
+- React
 
 ## Project Description
 
