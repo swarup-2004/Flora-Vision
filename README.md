@@ -44,6 +44,7 @@ This project focuses on utilizing machine learning techniques to identify variou
 
     ```bash
     $ pip install -r requirements.txt
+    $ npm install
     ```
     
 ## Usage
