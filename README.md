@@ -3,13 +3,17 @@
 ## Technologies Used
 
 ### BackEnd:
+
 - Python
 - Tensorflow
 - Keras
 - Flask
 
 ### FrontEnd:
+
 - React
+- Axios
+- Framer-motion
 
 ## Project Description
 
@@ -20,6 +24,7 @@ This project focuses on utilizing machine learning techniques to identify variou
 - **Flask API**: To deploy the trained model and make predictions accessible, we have built a Flask API. This API serves as the interface for users to interact with the model.
 
 - **Plant Classes**: The model can successfully identify images belonging to six different classes of medicinal plants. These classes are:
+
   - Arjuna
   - Bramhi
   - Curry
@@ -35,32 +40,32 @@ This project focuses on utilizing machine learning techniques to identify variou
 
 1. Clone the repository:
 
-    ```bash
-    $ git clone https://github.com/swarup-2004/Flora-Vision.git
-    $ cd Flora-Vision
+   ```bash
+   git clone https://github.com/swarup-2004/Flora-Vision.git
+   cd Flora-Vision
    ```
-    
-3. Install dependencies:
 
-    ```bash
-    $ pip install -r requirements.txt
-    $ npm install
-    ```
-    
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   npm install
+   ```
+
 ## Usage
+
 1. Start server:
 
-    ```bash
-    $ cd api
-    $ python app.py
-    ```
-    
+   ```bash
+   cd Backend
+   python app.py
+   ```
+
 2. Run Application:
 
    ```bash
-    $ npm run dev
-    ```
-
+    npm run dev
+   ```
 
 3. Upload image of Plant and get result
 4. Ask Questions to chatbot
