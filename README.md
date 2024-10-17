@@ -1,4 +1,6 @@
-# MindSpark Hackathon
+# Tactical Trends Backend
+
+
 
 This project is part of the MindSpark Hackathon and involves building a news aggregation application using a Django backend, integrated with Qdrant for vector storage and MySQL for data management.
 
@@ -8,7 +10,7 @@ This project is part of the MindSpark Hackathon and involves building a news agg
 
 Ensure that you have the following installed:
 
-- **Python 3.x**
+- **Python 3.11**
 - **pip** (Python package installer)
 - **virtualenv** (optional but recommended)
 - **Docker** (for Qdrant)
