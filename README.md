@@ -1,135 +1,85 @@
-# Tactical Trends Backend
+# Flora Vision
 
+## Technologies Used
 
+### BackEnd:
 
-This project is part of the MindSpark Hackathon and involves building a news aggregation application using a Django backend, integrated with Qdrant for vector storage and MySQL for data management.
+- Python
+- Tensorflow
+- Keras
+- Flask
 
-## Getting Started
+### FrontEnd:
 
-### Prerequisites
+- React
+- Axios
+- Framer-motion
 
-Ensure that you have the following installed:
+## Project Description
 
-- **Python 3.11**
-- **pip** (Python package installer)
-- **virtualenv** (optional but recommended)
-- **Docker** (for Qdrant)
-- **MySQL** (for the database)
+This project focuses on utilizing machine learning techniques to identify various medicinal plants and provide users with relevant information. Below are the key components of the project:
 
-### 1. Clone the Repository
+- **CNN Model Training**: We have trained a Convolutional Neural Network (CNN) model using TensorFlow and Keras. The model is trained on a dataset containing images of medicinal plants.
 
-Clone the repository and navigate into the project directory:
+- **Flask API**: To deploy the trained model and make predictions accessible, we have built a Flask API. This API serves as the interface for users to interact with the model.
 
-```bash
-git clone https://github.com/swarup-2004/MindSpark-Hacathon.git
-cd MindSpark-Hacathon
-```
+- **Plant Classes**: The model can successfully identify images belonging to six different classes of medicinal plants. These classes are:
 
-### 2. Set Up a Virtual Environment
+  - Arjuna
+  - Bramhi
+  - Curry
+  - Mint
+  - Neem
+  - Rubble
 
-Create and activate a virtual environment:
+- **Prediction and Information Retrieval**: Upon successful prediction, users receive information about the identified medicinal plant. This information includes various attributes such as medicinal properties, usage, and precautions.
 
-```bash
-# Create a virtual environment
-python -m venv env
+- **Chatbot Integration**: Additionally, we have integrated a chatbot feature to allow users to ask questions related to the identified plant. The chatbot provides informative responses based on the user's queries.
 
-# Activate the virtual environment
-# For Windows:
-env\Scripts\activate
-# For Mac/Linux:
-source env/bin/activate
-```
+## Installation
 
-### 3. Install Dependencies
+1. Clone the repository:
 
-Install the required packages:
+   ```bash
+   git clone https://github.com/swarup-2004/Flora-Vision.git
+   cd Flora-Vision
+   ```
 
-```bash
-pip install -r requirements.txt
-```
+2. Install dependencies:
 
-### 4. Configure Qdrant Vector Database
+   ```bash
+   pip install -r requirements.txt
+   npm install
+   ```
 
-#### Pull the Docker Image from Docker Hub:
+## Usage
 
-```bash
-docker pull qdrant/qdrant
-```
+1. Start server:
 
-#### Run the Qdrant Docker Image:
+   ```bash
+   cd Backend
+   python app.py
+   ```
 
-```bash
-docker run -p 6333:6333 qdrant/qdrant
-```
+2. Run Application:
 
-#### Create a Collection:
+   ```bash
+    npm run dev
+   ```
 
-In a Python script or interactive shell, run the following code:
+3. Upload image of Plant and get result
+4. Ask Questions to chatbot
 
-```python
-from qdrant_client import QdrantClient
+## Contributors
 
-client = QdrantClient("http://localhost:6333")
+- Atharva Zanjad
+- Swarup Pokhakar
+- Tanmay Shingavi
+- Vaishnavi Thakur
 
-def create_qdrant_collection():
-    collection_name = "articles"
-    # Check if the collection exists
-    client.create_collection(
-        collection_name=collection_name,
-        vectors_config={"size": 384, "distance": "Cosine"}  # Adjust the vector size as per your model
-    )
-    print(f"Collection '{collection_name}' created.")
+## Screenshots
 
-create_qdrant_collection()
-```
-
-### 5. Configure the MySQL Database
-
-1. Create a database named `news` on your local MySQL server.
-2. Create a `.env` file in your project directory and add the following configurations:
-
-```
-DATABASE_NAME=news
-DATABASE_USER=your_database_user
-DATABASE_PASSWORD=your_database_password
-DATABASE_HOST=localhost
-DATABASE_PORT=3306
-
-EMAIL_PORT=your_email_port
-EMAIL_USE_TLS=True
-EMAIL_HOST_USER=your_email_host_user
-EMAIL_HOST_PASSWORD=your_email_host_password
-DEFAULT_FROM_EMAIL=your_default_from_email
-
-NEWS_API_KEY=your_news_api_key
-```
-
-### 6. Migrate the Database
-
-Change to the `mindspark_backend` directory and run migrations:
-
-```bash
-cd mindspark_backend
-python manage.py migrate
-```
-
-### 7. Create a Superuser
-
-Create a superuser for the Django admin interface:
-
-```bash
-python manage.py createsuperuser
-```
-
-### 8. Run the Server
-
-Start the Django development server:
-
-```bash
-python manage.py runserver
-```
-
-## Additional Notes
-
-- Ensure that you have Docker installed and running on your machine to pull and run the Qdrant image.
-- Make sure to replace placeholder values in the `.env` file with your actual database and email configuration details.
+<img src="Screenshot 2024-06-23 160146.png">
+<img src="Screenshot 2024-06-23 160246.png">
+<img src="Screenshot 2024-06-23 160314.png">
+<img src="Screenshot 2024-06-23 160349.png">
